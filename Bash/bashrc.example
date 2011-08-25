@@ -1,0 +1,300 @@
+
+
+# EXPORTS
+#######################################################
+
+# PATH=$PATH:/usr/lib/festival/ ;export PATH
+
+#export PS1="[\[\033[1;34m\w\[\033[0m]\n[\t \u]$ "
+
+export EDITOR=/usr/bin/vim
+export HISTFILESIZE=10000        # the bash history should save 3000 commands
+export HISTCONTROL=ignoredups   # don't put duplicate lines in the history.
+alias hist='history | grep $1'  # Requires one input
+
+# Define a few Color's
+BLACK='\e[0;30m'
+BLUE='\e[0;34m'
+GREEN='\e[0;32m'
+CYAN='\e[0;36m'
+RED='\e[0;31m'
+PURPLE='\e[0;35m'
+BROWN='\e[0;33m'
+LIGHTGRAY='\e[0;37m'
+DARKGRAY='\e[1;30m'
+LIGHTBLUE='\e[1;34m'
+LIGHTGREEN='\e[1;32m'
+LIGHTCYAN='\e[1;36m'
+LIGHTRED='\e[1;31m'
+LIGHTPURPLE='\e[1;35m'
+YELLOW='\e[1;33m'
+WHITE='\e[1;37m'
+NC='\e[0m'              # No Color
+
+# Sample Command using color: echo -e "${CYAN}This is BASH
+${RED}${BASH_VERSION%.*}${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n"
+
+
+# SOURCED ALIAS'S AND SCRIPTS
+#######################################################
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# enable programmable completion features
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+
+# ALIAS'S OF ALL TYPES SHAPES AND FORMS ;)
+#######################################################
+
+# Alias's to local workstations
+alias dla       ='ssh  -l bobby'
+alias jason='ssh 192.168.2.103 -l root'
+alias randy='ssh 192.168.2.104 -l root'
+alias bob='ssh 192.168.2.105 -l root'
+alias don='ssh 192.168.2.106 -l root'
+alias counter='ssh 192.168.2.107 -l root'
+
+# ALIAS TO REMOTE SERVERS
+alias ANYNAMEHERE='ssh YOURWEBSITE.com -l USERNAME -p PORTNUMBERHERE'
+# My server info removed from above for obvious reasons ;)
+
+# Alias's to TN5250 programs. AS400 access commands.
+alias d1='xt5250 env.TERM = IBM-3477-FC env.DEVNAME=D1 192.168.2.5 &'
+alias d2='xt5250 env.TERM = IBM-3477-FC env.DEVNAME=D2 192.168.2.5 &'
+alias tn5250j='nohup java -jar /home/crouse/tn5250j/lib/tn5250j.jar
+2>>error.log &'
+
+# Alias's to some of my BashScripts
+alias bics='sh /home/crouse/scripts/bics/bics.sh'
+alias backup='sh /home/crouse/scripts/usalugbackup.sh'
+alias calc='sh /home/crouse/scripts/bashcalc.sh'
+alias makepdf='sh /home/crouse/scripts/makepdf.sh'
+alias phonebook='sh /home/crouse/scripts/PHONEBOOK/baps.sh'
+alias pb='sh /home/crouse/scripts/PHONEBOOK/baps.sh'
+alias ppe='/home/crouse/scripts/passphraseencryption.sh'
+alias scripts='cd /home/crouse/scripts'
+
+# Alias's to control hardware
+alias cdo='eject /dev/cdrecorder'
+alias cdc='eject -t /dev/cdrecorder'
+alias dvdo='eject /dev/dvd'
+alias dvdc='eject -t /dev/dvd'
+alias scan='scanimage -L'
+alias playw='for i in *.wav; do play $i; done'
+alias playo='for i in *.ogg; do play $i; done'
+alias playm='for i in *.mp3; do play $i; done'
+alias copydisk='dd if=/dev/dvd of=/dev/cdrecorder' # Copies bit by bit
+from dvd to cdrecorder drives.
+alias dvdrip='vobcopy -i /dev/dvd/ -o ~/DVDs/ -l'
+
+# Alias's to modified commands
+alias ps='ps auxf'
+alias home='cd ~'
+alias pg='ps aux | grep'  #requires an argument
+alias un='tar -zxvf'
+alias mountedinfo='df -hT'
+alias ping='ping -c 10'
+alias openports='netstat -nape --inet'
+alias ns='netstat -alnp --protocol=inet | grep -v CLOSE_WAIT | cut
+-c-6,21-94 | tail +2'
+alias du1='du -h --max-depth=1'
+alias da='date "+%Y-%m-%d %A    %T %Z"'
+alias ebrc='pico ~/.bashrc'
+
+# Alias to multiple ls commands
+alias la='ls -Al'               # show hidden files
+alias ls='ls -aF --color=always' # add colors and file type extensions
+alias lx='ls -lXB'              # sort by extension
+alias lk='ls -lSr'              # sort by size
+alias lc='ls -lcr'      # sort by change time
+alias lu='ls -lur'      # sort by access time
+alias lr='ls -lR'               # recursive ls
+alias lt='ls -ltr'              # sort by date
+alias lm='ls -al |more'         # pipe through 'more'
+
+# Alias chmod commands
+alias mx='chmod a+x'
+alias 000='chmod 000'
+alias 644='chmod 644'
+alias 755='chmod 755'
+
+# Alias Shortcuts to graphical programs.
+alias kwrite='kwrite 2>/dev/null &'
+alias firefox='firefox 2>/dev/null &'
+alias gaim='gaim 2>/dev/null &'
+alias kate='kate 2>/dev/null &'
+alias suk='kdesu konqueror 2>/dev/null &'
+
+# Alias xterm and aterm
+alias term='xterm -bg AntiqueWhite -fg Black &'
+alias termb='xterm -bg AntiqueWhite -fg NavyBlue &'
+alias termg='xterm -bg AntiqueWhite -fg OliveDrab &'
+alias termr='xterm -bg AntiqueWhite -fg DarkRed &'
+alias aterm='aterm -ls -fg gray -bg black'
+alias xtop='xterm -fn 6x13 -bg LightSlateGray -fg black -e top &'
+alias xsu='xterm -fn 7x14 -bg DarkOrange4 -fg white -e su &'
+
+# Alias for lynx web browser
+alias bbc='lynx -term=vt100 http://news.bbc.co.uk/text_only.stm'
+alias nytimes='lynx -term=vt100 http://nytimes.com'
+alias dmregister='lynx -term=vt100 http://desmoinesregister.com'
+
+
+# SOME OF MY UNUSED ALIAS's
+#######################################################
+
+# alias d=`echo "Good Morning Dave. today's date is" | festival --tts;
+date +'%A %B %e' | festival --tts`
+# alias shrink84='/home/crouse/shrink84/shrink84.sh'
+# alias tl='tail -f /var/log/apache/access.log'
+# alias te='tail -f /var/log/apache/error.log'
+
+
+# SPECIAL FUNCTIONS
+#######################################################
+
+netinfo ()
+{
+echo "--------------- Network Information ---------------"
+/sbin/ifconfig | awk /'inet addr/ {print $2}'
+echo ""
+/sbin/ifconfig | awk /'Bcast/ {print $3}'
+echo ""
+/sbin/ifconfig | awk /'inet addr/ {print $4}'
+
+# /sbin/ifconfig | awk /'HWaddr/ {print $4,$5}'
+echo "---------------------------------------------------"
+}
+
+spin ()
+{
+echo -ne "${RED}-"
+echo -ne "${WHITE}\b|"
+echo -ne "${BLUE}\bx"
+sleep .02
+echo -ne "${RED}\b+${NC}"
+}
+
+scpsend ()
+{
+scp -P PORTNUMBERHERE "$@"
+USERNAME@YOURWEBSITE.com:/var/www/html/pathtodirectoryonremoteserver/;
+}
+
+
+# NOTES
+#######################################################
+
+# To temporarily bypass an alias, we preceed the command with a \
+# EG:  the ls command is aliased, but to use the normal ls command you would
+# type \ls
+
+# mount -o loop /home/crouse/NAMEOFISO.iso /home/crouse/ISOMOUNTDIR/
+# umount /home/crouse/NAMEOFISO.iso
+# Both commands done as root only.
+
+
+# WELCOME SCREEN
+#######################################################
+
+clear
+for i in `seq 1 15` ; do spin; done ;echo -ne "${WHITE} USA Linux Users
+Group ${NC}"; for i in `seq 1 15` ; do spin; done ;echo "";
+echo -e ${LIGHTBLUE}`cat /etc/SUSE-release` ;
+echo -e "Kernel Information: " `uname -smr`;
+echo -e ${LIGHTBLUE}`bash --version`;echo ""
+echo -ne "Hello $USER today is "; date
+echo -e "${WHITE}"; cal ; echo "";
+echo -ne "${CYAN}";netinfo;
+mountedinfo ; echo ""
+echo -ne "${LIGHTBLUE}Uptime for this computer is ";uptime | awk /'up/
+{print $3,$4}'
+for i in `seq 1 15` ; do spin; done ;echo -ne "${WHITE} http://usalug.org
+${NC}"; for i in `seq 1 15` ; do spin; done ;echo "";
+echo ""; echo ""
+The following belong under the "function" section in my .bashrc. Useable as seperate programs, I've integrated them simply as functions for my .bashrc file in order to make them quick to use and easy to modify and find. These are functions that are used to symetrically encrypt and to decrypt files and messages. Some are completely command line, and the last two create gui interfaces to locate the files to encrypt/decrypt. If you create a program out of the functions creating a link via a shortcut/icon on the desktop would create a completely gui based interface to locate and encrypt/decrypt files. Either way, it's an easy way to use gpg.
+
+Requires: zenity, gpg
+
+################### Begin gpg functions ##################
+encrypt ()
+{
+# Use ascii armor
+gpg -ac --no-options "$1"
+}
+
+bencrypt ()
+{
+# No ascii armor
+# Encrypt binary data. jpegs/gifs/vobs/etc.
+gpg -c --no-options "$1"
+}
+
+decrypt ()
+{
+gpg --no-options "$1"
+}
+
+pe ()
+{
+# Passphrase encryption program
+# Created by Dave Crouse 01-13-2006
+# Reads input from text editor and encrypts to screen.
+clear
+echo "         Passphrase Encryption Program";
+echo "--------------------------------------------------"; echo "";
+which $EDITOR &>/dev/null
+ if [ $? != "0" ];
+     then
+     echo "It appears that you do not have a text editor set in your
+.bashrc file.";
+     echo "What editor would you like to use ? " ;
+     read EDITOR ; echo "";
+ fi
+echo "Enter the name/comment for this message :"
+read comment
+$EDITOR passphraseencryption
+gpg --armor --comment "$comment" --no-options --output
+passphraseencryption.gpg --symmetric passphraseencryption
+shred -u passphraseencryption ; clear
+echo "Outputting passphrase encrypted message"; echo "" ; echo "" ;
+cat passphraseencryption.gpg ; echo "" ; echo "" ;
+shred -u passphraseencryption.gpg ;
+read -p "Hit enter to exit" temp; clear
+}
+
+keys ()
+{
+# Opens up kgpg keymanager
+kgpg -k
+}
+
+encryptfile ()
+{
+zenity --title="zcrypt: Select a file to encrypt" --file-selection > zcrypt
+encryptthisfile=`cat zcrypt`;rm zcrypt
+# Use ascii armor
+#  --no-options (for NO gui usage)
+gpg -acq --yes ${encryptthisfile}
+zenity --info --title "File Encrypted" --text "$encryptthisfile has been
+encrypted"
+}
+
+decryptfile ()
+{
+zenity --title="zcrypt: Select a file to decrypt" --file-selection > zcrypt
+decryptthisfile=`cat zcrypt`;rm zcrypt
+# NOTE: This will OVERWRITE existing files with the same name !!!
+gpg --yes -q ${decryptthisfile}
+zenity --info --title "File Decrypted" --text "$encryptthisfile has been
+decrypted"
+}
+
+################### End gpg functions ##################
+

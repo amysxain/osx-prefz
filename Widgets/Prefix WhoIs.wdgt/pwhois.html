@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Prefix WhoIs</title>
+	<script type='text/javascript' src='Scripts/Stretcher.js'></script>
+	<script type='text/javascript' src='Scripts/Scroller.js'></script>
+  <script type='text/javascript' src='Scripts/pwhois.js'></script>
+	<style type='text/css'>
+		@import "styles.css";
+	</style>
+</head>
+
+<body onload='loaded();'>
+	<div id='front'>
+		<div id='topEdge'><div id='searchBar'>        
+    <form id="searchForm" action='javascript:if ( state == 0 ) {stretcher.stretch(event); state = 1; waiting (); processRequest(searchInput.value);} else {waiting (); processRequest(searchInput.value); doScroll();}'></input>
+	  <input id="searchInput" type="search" autosave="searchHistory" results="5" onMouseDown="javascript: if( event.clientX > 165 && event.clientX <185 ) { if ( state == 1 ) {stretcher.stretch(event);state = 0;} }">  </form> </div>
+    <div id='pcountOutput' onclick='javascript:if ( state == 0 ) {stretcher.stretch(event); state = 1; waiting (); processRequest("version");} else {waiting (); processRequest("version"); doScroll();}'></div>
+    <div id='pLogo' onclick='javascript:visitPwhois();'></div>
+    </div>
+		<div id='bottomEdge' onclick='javascript:stretcher.stretch(event); state = 0;'>
+		<p>
+		</div>
+		<div id='center'>
+		  <div id='parentDiv'>
+			<div class='mainContent' id='content'></div>
+			<div id='myScrollBar'>
+				<div id='myScrollTrack'> 
+					<!-- onmousedown='mouseDownTrack(event);' onmouseup='mouseUpTrack(event);'-->
+					<div class='scrollTrackTop' id='myScrollTrackTop'></div>
+					<div class='scrollTrackMid' id='myScrollTrackMid'></div>
+					<div class='scrollTrackBot' id='myScrollTrackBot'></div>
+				</div>
+				<div id='myScrollThumb'>
+					<!-- onmousedown='mouseDownScrollThumb(event);'-->
+					<div class='scrollThumbTop' id='myScrollThumbTop'></div>
+					<div class='scrollThumbMid' id='myScrollThumbMid'></div>
+					<div class='scrollThumbBot' id='myScrollThumbBot'></div>
+				</div>
+			</div>
+        </div>
+    </div>
+		</div>
+	</div>
+	<div id='debugDiv'></div>
+</body>
+</html>

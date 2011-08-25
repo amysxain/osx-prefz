@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowFullAccess</key>
+	<false/>
+	<key>AllowInternetPlugins</key>
+	<false/>
+	<key>AllowNetworkAccess</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>Prefix WhoIs</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.vostrom.widget.pwhois</string>
+	<key>CFBundleName</key>
+	<string>Prefix WhoIs</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2</string>
+	<key>CFBundleVersion</key>
+	<string>1.2</string>
+	<key>CloseBoxInsetX</key>
+	<integer>14</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>14</integer>
+	<key>Height</key>
+	<integer>58</integer>
+	<key>MainHTML</key>
+	<string>pwhois.html</string>
+	<key>Width</key>
+	<integer>340</integer>
+</dict>
+</plist>

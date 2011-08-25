@@ -1,0 +1,267 @@
+/*
+
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 320px;
+	height: 166px;
+	font-family: "Lucida Grande", verdana, arial, sans-serif;
+	font-size: 10px;
+}
+
+#front {
+    display:block;
+	width: 320px;
+	height: 155px;
+	margin: 0px;
+	padding: 0px;
+/*	background: url(Default.png) no-repeat;*/
+} 
+ 
+#back {
+    display:none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 270px;
+	background: url(Images/back.png) no-repeat;	
+	padding: 20px 25px 25px 25px;
+} 
+ 
+#top {
+	position: absolute;
+	top:4px;
+	left:0px;
+	right:0px;
+	height:34px;
+	width: 320px;
+	background: url(Images/top.png) no-repeat;
+}
+
+#top-left {
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	width: 13px;
+	height: 34px;
+}
+
+#top-middle {
+	position: absolute;
+	top: 4px;
+	left: 13px;
+	right: 13px;
+	height: 34px;
+}
+
+#top-right {
+	position: absolute;
+	top: 4px;
+	right: 0px;
+	width: 13px;
+	height: 34px;
+}
+
+#middle {
+	position: absolute;
+	top:38px;
+	left:0px;
+	right:0px;
+	height:137px;
+	width: 320px;
+	background: url(Images/middle.png) repeat-y;	
+}
+
+#middle-left {
+	position: absolute;
+	top: 0px;
+	bottom: 13px;
+	left: 0px;
+	width: 13px;
+}
+
+#middle-middle {
+	position: absolute;
+	top: 0px;
+	bottom: 13px;
+	left: 13px;
+	right: 13px;
+	overflow: visible;
+}
+
+#middle-right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 13px;
+	width: 13px;
+}
+
+#bottom {
+	position: absolute;
+	top:172px;
+	left:0px;
+	right:0px;
+	height:8px;
+	width: 320px;
+	background: url(Images/bottom.png) no-repeat;
+}
+
+#bottom-left {
+	position: absolute;
+	left: 1px;
+	bottom: 0px;
+	width: 13px;
+	height: 8px;
+}
+
+#bottom-middle {
+	position: absolute;
+	left: 13px;
+	right: 13px;
+	bottom: 0px;
+	height: 8px;
+}
+
+#bottom-right {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 13px;
+	height: 8px;
+}
+
+#back-top {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 320px;
+	height: 30px;
+	background: url(Images/back_top.png) no-repeat;
+}
+
+#back-middle {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	width: 320px;
+	height: 200px;
+	background: url(Images/back_middle.png) repeat-y;
+}
+
+#back-bottom {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 320px;
+	height: 29px;
+	background: url(Images/back_bottom.png) no-repeat;
+}
+
+#infoButton {
+	position: absolute;
+	top: 5px;
+	right: 15px;	
+}
+
+#doneButton {
+    position:absolute;
+    top:110px;
+    left:250px;
+}
+
+#connectButton {
+	position: absolute;
+	bottom: -5px;
+	right: 5px;
+	display: block;
+}
+
+#resetButton {
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+	display: block;
+}
+
+
+#addBookmarkButton, #removeBookmarkButton {
+	display: inline;
+	float: right;
+	margin-left: 3px;
+}
+
+#bookmarks {
+	width: 230px;
+}
+
+/* Input form on front area */
+
+#sshaccess-form {
+	float: left;
+	position: absolute;
+	top: 5px;
+	margin-left: 5px;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#sshaccess-form input {
+	margin-right: 5px;
+}
+
+#sshaccess-form label {
+	padding-right: 5px;
+	position: relative;
+	top: 5px;
+	width: 55px;
+	float: left;
+}
+
+#sshaccess-form #account 	{ width: 135px; }
+#sshaccess-form #server 	{ width: 135px; margin-right: 10px; }
+#sshaccess-form #port 		{ width: 43px; margin-left: 5px; margin-right: 0px;}
+#sshaccess-form #password	{ width: 135px; }
+
+#sshaccess-form #keychainCheckbox { display: none; }
+#sshaccess-form #addToKeychain{ margin-left: 60px; }
+
+/* Configuration form on widgets back */
+#configuration-header {
+	color: white;
+	position: absolute;
+	font-size: 10px;
+	width: 280px;
+}
+#configuration-header h2 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+#configuration-form {
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	color: white;
+	font-size: 10px;
+}
+
+#back #configuration-footer {
+	font-size: 10px;
+	color: lightgrey;
+	position: absolute;
+	top:115px;
+	left: 25px;
+}
+
+#back #configuration-footer a {
+	font-size: 10px;
+	color: lightgrey;
+}

@@ -1,0 +1,76 @@
+<html>
+
+<style type="text/css">
+	@import "main.css";
+</style>
+
+<script type='text/javascript' src='main.js' />
+<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleInfoButton.js' charset='utf-8'/>
+<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleAnimator.js' charset='utf-8'/>
+<script type='text/javascript' src='/System/Library/WidgetResources/AppleClasses/AppleButton.js' charset='utf-8'/>
+
+</head>
+
+<body onload="setup();">
+	
+	<div id="front">
+		<div id="top">
+			<div id="top-left"></div>
+			<div id="top-middle">
+				<div id="infoButton"></div>
+			</div>
+			<div id="top-right"></div>
+		</div>
+
+		<div id="middle">
+			<div id="middle-left"></div>
+			<div id="middle-middle">
+				<div id="sshaccess-form">
+					<form action="" onsubmit="connectSSH(); return false;">
+						<div id="removeBookmarkButton" title="remove the currently selected bookmark"></div>
+						<div id="addBookmarkButton" title="add the current connection to your bookmarks"></div>
+						<select id="bookmarks"></select>
+						<hr />
+						<label for="server">Server:</label><input type="text" id="server" />
+						Port: <input type="text" id="port" />
+						<br />
+						<label for="account">Account:</label><input type="text" id="account" />
+						<br />
+						<label for="password">Password:</label><input type="password" id="password" />
+						<br />
+						<div id="keychainCheckbox">
+							<input type="checkbox" name="addToKeychain" id="addToKeychain" value="" />
+							Add to keychain
+						</div>
+					</form>
+				</div>
+				<div id="resetButton"></div>
+				<div id="connectButton"></div>
+			</div>
+			<div id="middle-right"></div>	
+		</div>
+
+		<div id="bottom">
+			<div id="bottom-left"></div>
+			<div id="bottom-middle"></div>
+			<div id="bottom-right"></div>
+		</div>
+		
+	</div>
+
+	<div id="back">
+		<div id="configuration-header">
+			<h2>sshortcut</h2>
+			Version: 0.2 beta<br /><br />
+			This widget has been tested only on OS X 10.4.11. So please report any bugs you might encounter on other versions.
+		</div>
+		<div id="configuration-form">
+			<label for="useKeychain">Use keychain:</label><input type="checkbox" name="useKeychain" id="useKeychain" value="" />
+		</div>
+		<div id="configuration-footer">Written and maintained by <a href="http://www.ralfbaumbach.de" id="configuration-footer-link">Ralf Baumbach</a>.</div>
+		<div id="doneButton" onclick="savePreferences();"></div>
+	</div>
+		
+</body>
+
+</html>
