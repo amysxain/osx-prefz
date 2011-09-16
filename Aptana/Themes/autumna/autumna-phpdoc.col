@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colorizer xmlns="http://www.aptana.com/2007/colorizer/1.0" background="rgb(63,58,56)" caret-color="rgb(0,0,0)" folding-background="rgb(63,58,56)" folding-foreground="rgb(139,139,139)" language="text/phpdoc" line-highlight="rgb(82,74,69)" selection-background="rgb(51,153,255)" selection-foreground="rgb(82,74,69)">
+<category name="WHITESPACE" style="WHITESPACE"/>
+<style foreground="rgb(94,108,108)" id="WHITESPACE"/>
+<category name="LITERAL" style="LITERAL"/>
+<style foreground="rgb(118,137,137)" id="LITERAL"/>
+<category name="KEYWORD" style="KEYWORD"/>
+<style font-weight="bold" foreground="rgb(81,92,94)" id="KEYWORD"/>
+<category name="ERROR" style="ERROR"/>
+<style foreground="rgb(255,0,0)" id="ERROR"/>
+<category name="PUNCTUATOR" style="PUNCTUATOR"/>
+<style foreground="rgb(164,164,164)" id="PUNCTUATOR"/>
+<category name="IDENTIFIER" style="IDENTIFIER"/>
+<style foreground="rgb(108,84,255)" id="IDENTIFIER"/>
+<category name="DELIMITER" style="DELIMITER"/>
+<style foreground="rgb(99,107,106)" id="DELIMITER"/>
+</colorizer>

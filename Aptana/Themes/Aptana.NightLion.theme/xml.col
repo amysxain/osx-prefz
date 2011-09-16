@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colorizer xmlns="http://www.aptana.com/2007/colorizer/1.0" background="rgb(54,54,54)" caret-color="rgb(205,205,205)" folding-background="rgb(54,54,54)" folding-foreground="rgb(128,128,128)" language="text/xml" line-highlight="rgb(54,54,54)" selection-background="rgb(163,188,174)" selection-foreground="rgb(54,54,54)">
+<category name="WHITESPACE" style="WHITESPACE"/>
+<style foreground="rgb(127,127,127)" id="WHITESPACE"/>
+<category name="LITERAL" style="LITERAL">
+<token style="LITERAL_ENTITY_REF" type="ENTITY_REF"/>
+<token style="LITERAL_PE_REF" type="PE_REF"/>
+<token style="LITERAL_CHAR_REF" type="CHAR_REF"/>
+<token style="LITERAL_TEXT" type="TEXT"/>
+<token style="LITERAL_PI_TEXT" type="PI_TEXT"/>
+<token style="LITERAL_CDATA_TEXT" type="CDATA_TEXT"/>
+<token style="LITERAL_STRING" type="STRING"/>
+</category>
+<style foreground="rgb(223,223,191)" id="LITERAL"/>
+<style foreground="rgb(234,184,130)" id="LITERAL_ENTITY_REF"/>
+<style foreground="rgb(234,184,130)" id="LITERAL_PE_REF"/>
+<style foreground="rgb(234,184,130)" id="LITERAL_CHAR_REF"/>
+<style foreground="rgb(255,255,255)" id="LITERAL_TEXT"/>
+<style foreground="rgb(223,223,191)" id="LITERAL_PI_TEXT"/>
+<style foreground="rgb(128,128,128)" id="LITERAL_CDATA_TEXT"/>
+<style foreground="rgb(176,234,191)" id="LITERAL_STRING"/>
+<category name="KEYWORD" style="KEYWORD"/>
+<style foreground="rgb(223,223,191)" id="KEYWORD"/>
+<category name="ERROR" style="ERROR"/>
+<style font-style="italic" foreground="rgb(245,163,160)" id="ERROR"/>
+<category name="PUNCTUATOR" style="PUNCTUATOR">
+<token style="PUNCTUATOR_END_TAG" type="END_TAG"/>
+<token style="PUNCTUATOR_NOTATION_DECL" type="NOTATION_DECL"/>
+<token style="PUNCTUATOR_LBRACKET" type="LBRACKET"/>
+<token style="PUNCTUATOR_GREATER_THAN" type="GREATER_THAN"/>
+<token style="PUNCTUATOR_XML_DECL" type="XML_DECL"/>
+<token style="PUNCTUATOR_DOCTYPE_DECL" type="DOCTYPE_DECL"/>
+<token style="PUNCTUATOR_SLASH_GREATER_THAN" type="SLASH_GREATER_THAN"/>
+<token style="PUNCTUATOR_QUESTION_GREATER_THAN" type="QUESTION_GREATER_THAN"/>
+<token style="PUNCTUATOR_RBRACKET" type="RBRACKET"/>
+<token style="PUNCTUATOR_START_TAG" type="START_TAG"/>
+</category>
+<style foreground="rgb(128,128,128)" id="PUNCTUATOR"/>
+<style foreground="rgb(141,203,226)" id="PUNCTUATOR_END_TAG"/>
+<style foreground="rgb(135,218,141)" id="PUNCTUATOR_NOTATION_DECL"/>
+<style foreground="rgb(141,203,226)" id="PUNCTUATOR_LBRACKET"/>
+<style foreground="rgb(141,203,226)" id="PUNCTUATOR_GREATER_THAN"/>
+<style foreground="rgb(223,223,191)" id="PUNCTUATOR_XML_DECL"/>
+<style foreground="rgb(223,223,191)" id="PUNCTUATOR_DOCTYPE_DECL"/>
+<style foreground="rgb(141,203,226)" id="PUNCTUATOR_SLASH_GREATER_THAN"/>
+<style foreground="rgb(223,223,191)" id="PUNCTUATOR_QUESTION_GREATER_THAN"/>
+<style foreground="rgb(141,203,226)" id="PUNCTUATOR_RBRACKET"/>
+<style foreground="rgb(141,203,226)" id="PUNCTUATOR_START_TAG"/>
+</colorizer>

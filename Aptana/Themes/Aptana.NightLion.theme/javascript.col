@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colorizer xmlns="http://www.aptana.com/2007/colorizer/1.0" background="rgb(55,55,55)" caret-color="rgb(205,205,205)" folding-background="rgb(54,54,54)" folding-foreground="rgb(128,128,128)" language="text/javascript" line-highlight="rgb(54,54,54)" selection-background="rgb(163,188,174)" selection-foreground="rgb(54,54,54)">
+<category name="WHITESPACE" style="WHITESPACE">
+<token style="WHITESPACE_COMMENT" type="COMMENT"/>
+<token style="WHITESPACE_START_MULTILINE_COMMENT" type="START_MULTILINE_COMMENT"/>
+</category>
+<style foreground="rgb(127,127,127)" id="WHITESPACE"/>
+<style foreground="rgb(128,128,128)" id="WHITESPACE_COMMENT"/>
+<style foreground="rgb(127,127,127)" id="WHITESPACE_START_MULTILINE_COMMENT"/>
+<category name="LITERAL" style="LITERAL">
+<token style="LITERAL_STRING" type="STRING"/>
+<token style="LITERAL_NUMBER" type="NUMBER"/>
+<token style="LITERAL_REGEX" type="REGEX"/>
+</category>
+<style foreground="rgb(234,184,130)" id="LITERAL"/>
+<style foreground="rgb(176,234,191)" id="LITERAL_STRING"/>
+<style foreground="rgb(213,145,145)" id="LITERAL_NUMBER"/>
+<style foreground="rgb(135,175,135)" id="LITERAL_REGEX"/>
+<category name="KEYWORD" style="KEYWORD">
+<token style="KEYWORD_FUNCTION" type="FUNCTION"/>
+</category>
+<style foreground="rgb(141,203,226)" id="KEYWORD"/>
+<style foreground="rgb(180,221,236)" id="KEYWORD_FUNCTION"/>
+<category name="ERROR" style="ERROR"/>
+<style foreground="rgb(213,145,145)" id="ERROR"/>
+<category name="PUNCTUATOR" style="PUNCTUATOR">
+<token style="PUNCTUATOR_MINUS_MINUS" type="MINUS_MINUS"/>
+<token style="PUNCTUATOR_LBRACKET" type="LBRACKET"/>
+<token style="PUNCTUATOR_RBRACKET" type="RBRACKET"/>
+<token style="PUNCTUATOR_LCURLY" type="LCURLY"/>
+<token style="PUNCTUATOR_RCURLY" type="RCURLY"/>
+</category>
+<style foreground="rgb(128,128,128)" id="PUNCTUATOR"/>
+<style foreground="rgb(128,128,128)" id="PUNCTUATOR_MINUS_MINUS"/>
+<style foreground="rgb(128,128,128)" id="PUNCTUATOR_LBRACKET"/>
+<style foreground="rgb(128,128,128)" id="PUNCTUATOR_RBRACKET"/>
+<style font-weight="bold" foreground="rgb(115,135,155)" id="PUNCTUATOR_LCURLY"/>
+<style font-weight="bold" foreground="rgb(115,135,155)" id="PUNCTUATOR_RCURLY"/>
+<category name="IDENTIFIER" style="IDENTIFIER"/>
+<style foreground="rgb(223,223,191)" id="IDENTIFIER"/>
+</colorizer>

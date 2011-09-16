@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colorizer xmlns="http://www.aptana.com/2007/colorizer/1.0" background="rgb(54,54,54)" caret-color="rgb(205,205,205)" folding-background="rgb(54,54,54)" folding-foreground="rgb(128,128,128)" language="text/smarty" line-highlight="rgb(54,54,54)" selection-background="rgb(163,188,174)" selection-foreground="rgb(54,54,54)">
+<category name="FUNCTION" style="FUNCTION"/>
+<style foreground="rgb(141,203,226)" id="FUNCTION"/>
+<category name="WHITESPACE" style="WHITESPACE"/>
+<style foreground="rgb(128,128,128)" id="WHITESPACE"/>
+<category name="LITERAL" style="LITERAL">
+<token style="LITERAL_STRING" type="STRING"/>
+<token style="LITERAL_NUMBER" type="NUMBER"/>
+</category>
+<style foreground="rgb(231,225,154)" id="LITERAL"/>
+<style foreground="rgb(176,234,191)" id="LITERAL_STRING"/>
+<style foreground="rgb(231,225,154)" id="LITERAL_NUMBER"/>
+<category name="ERROR" style="ERROR"/>
+<style foreground="rgb(255,128,128)" id="ERROR"/>
+<category name="IDENTIFIER" style="IDENTIFIER">
+<token style="IDENTIFIER_CUSTOM_VARIABLE" type="CUSTOM_VARIABLE"/>
+<token style="IDENTIFIER_CUSTOM_FUNCTION" type="CUSTOM_FUNCTION"/>
+<token style="IDENTIFIER_VARIABLE" type="VARIABLE"/>
+</category>
+<style foreground="rgb(223,223,191)" id="IDENTIFIER"/>
+<style foreground="rgb(180,221,236)" id="IDENTIFIER_CUSTOM_VARIABLE"/>
+<style foreground="rgb(227,163,91)" id="IDENTIFIER_CUSTOM_FUNCTION"/>
+<style foreground="rgb(180,221,236)" id="IDENTIFIER_VARIABLE"/>
+<category name="PUNCTUATOR" style="PUNCTUATOR">
+<token style="PUNCTUATOR_CURLY_OPEN" type="CURLY_OPEN"/>
+<token style="PUNCTUATOR_CURLY_CLOSE" type="CURLY_CLOSE"/>
+</category>
+<style foreground="rgb(128,128,128)" id="PUNCTUATOR"/>
+<style foreground="rgb(180,221,236)" id="PUNCTUATOR_CURLY_OPEN"/>
+<style foreground="rgb(180,221,236)" id="PUNCTUATOR_CURLY_CLOSE"/>
+<category name="MODIFIER" style="MODIFIER"/>
+<style foreground="rgb(180,221,236)" id="MODIFIER"/>
+</colorizer>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colorizer xmlns="http://www.aptana.com/2007/colorizer/1.0" background="rgb(63,58,56)" caret-color="rgb(0,0,0)" folding-background="rgb(63,58,56)" folding-foreground="rgb(90,82,69)" language="text/php" line-highlight="rgb(82,74,69)" selection-background="rgb(88,81,75)" selection-foreground="rgb(87,79,70)">
+<category name="WHITESPACE" style="WHITESPACE">
+<token style="WHITESPACE_DOC_COMMENT" type="DOC_COMMENT"/>
+</category>
+<style foreground="rgb(103,89,73)" id="WHITESPACE"/>
+<style foreground="rgb(0,0,255)" id="WHITESPACE_DOC_COMMENT"/>
+<category name="LITERAL" style="LITERAL">
+<token style="LITERAL_HEREDOC" type="HEREDOC"/>
+<token style="LITERAL_STRING" type="STRING"/>
+<token style="LITERAL_NUMBER" type="NUMBER"/>
+</category>
+<style foreground="rgb(236,0,118)" id="LITERAL"/>
+<style foreground="rgb(0,128,255)" id="LITERAL_HEREDOC"/>
+<style foreground="rgb(172,205,56)" id="LITERAL_STRING"/>
+<style foreground="rgb(255,255,255)" id="LITERAL_NUMBER"/>
+<category name="KEYWORD" style="KEYWORD"/>
+<style foreground="rgb(249,183,85)" id="KEYWORD"/>
+<category name="PREDEFINED" style="PREDEFINED"/>
+<style foreground="rgb(192,83,71)" id="PREDEFINED"/>
+<category name="ERROR" style="ERROR"/>
+<style foreground="rgb(255,0,0)" id="ERROR"/>
+<category name="SUPERGLOBAL" style="SUPERGLOBAL"/>
+<style foreground="rgb(204,186,55)" id="SUPERGLOBAL"/>
+<category name="IDENTIFIER" style="IDENTIFIER">
+<token style="IDENTIFIER_IDENTIFIER" type="IDENTIFIER"/>
+<token style="IDENTIFIER_BUILT_IN_FUNCTION" type="BUILT_IN_FUNCTION"/>
+<token style="IDENTIFIER_VARIABLE" type="VARIABLE"/>
+</category>
+<style foreground="rgb(194,135,95)" id="IDENTIFIER"/>
+<style foreground="rgb(225,220,200)" id="IDENTIFIER_IDENTIFIER"/>
+<style foreground="rgb(128,128,255)" id="IDENTIFIER_BUILT_IN_FUNCTION"/>
+<style foreground="rgb(173,149,124)" id="IDENTIFIER_VARIABLE"/>
+<category name="PUNCTUATOR" style="PUNCTUATOR">
+<token style="PUNCTUATOR_OPEN_TAG" type="OPEN_TAG"/>
+<token style="PUNCTUATOR_CLOSE_TAG" type="CLOSE_TAG"/>
+</category>
+<style foreground="rgb(130,121,111)" id="PUNCTUATOR"/>
+<style foreground="rgb(255,128,0)" id="PUNCTUATOR_OPEN_TAG"/>
+<style foreground="rgb(128,166,198)" id="PUNCTUATOR_CLOSE_TAG"/>
+<category name="MAGIC" style="MAGIC"/>
+<style foreground="rgb(73,33,158)" id="MAGIC"/>
+</colorizer>
